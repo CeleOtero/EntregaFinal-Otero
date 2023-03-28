@@ -1,0 +1,421 @@
+/*/ No logre aplicar sintaxis de Sass en todo el documento /*/
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: black;
+  color: antiquewhite;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: bisque;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+  border: 2px;
+  border-radius: 25px;
+}
+header nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+header:hover {
+  color: black;
+}
+
+body .redes img {
+  display: flex;
+  height: 40px;
+  margin-bottom: 40px;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+body .redes img:hover {
+  transform: scale(2);
+}
+body .fotorespo {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  justify-content: center;
+  height: 500;
+  width: 316;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body .movies {
+  text-align: center;
+}
+body .titulo {
+  justify-content: center;
+  text-align: center;
+}
+
+.fotorespo img {
+  width: 500;
+  height: 316;
+}
+
+.redes {
+  background-image: url(../Images/1.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.redes a {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.galeria {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.igintegrantes {
+  display: flex;
+  padding: 15px;
+  height: 100%;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: space-evenly;
+}
+.igintegrantes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.igintegrantes img {
+  display: flex;
+  height: 40px;
+  flex-direction: row;
+}
+
+.barravideos img {
+  height: 40px;
+  margin-bottom: 40px;
+  margin-right: 2rem;
+}
+.barravideos img:hover {
+  transform: scale(2);
+}
+
+.barravideos a {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.barravideos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1 {
+  color: bisque;
+}
+
+h4 {
+  color: bisque;
+}
+
+.piedepagina {
+  display: flex;
+  min-height: 70px;
+  background-color: bisque;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.piedepagina .logo {
+  display: flex;
+  align-items: center;
+}
+.piedepagina .logo img {
+  height: 50px;
+  margin-right: 10px;
+  border: 2px;
+  border-radius: 25px;
+}
+
+.contacto .fechas-proximas a {
+  color: antiquewhite;
+}
+.contacto .formularios-contacto form {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.contacto .formularios-contacto textarea {
+  height: 10rem;
+  width: 80rem;
+}
+.contacto .boton-enviar {
+  margin: 2rem 0 2rem 2rem;
+}
+
+.cambio-fuente {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: antiquewhite;
+  text-align: center;
+  line-height: 2;
+}
+
+p {
+  color: antiquewhite;
+}
+
+#alinear {
+  margin: 0;
+  font-size: small;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  text-align: center;
+  gap: 10px;
+  overflow: hidden;
+}
+#alinear li {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  width: 25%;
+  min-height: 300px;
+  max-height: 100%;
+  transition: 0.3s;
+}
+#alinear li:hover {
+  background-color: bisque;
+}
+#alinear li a {
+  padding: 20px 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#alinear li iframe {
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.banda {
+  grid-area: banda;
+}
+
+.fotosbio {
+  display: grid;
+  grid-template-rows: repeat(3, fr);
+  grid-template-columns: repeat(2, fr);
+  grid-template-areas: "banda banda" "cantante bajo" "coros bateria";
+  justify-items: center;
+  align-items: center;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.fotosbio img {
+  height: 200px;
+}
+
+.videos {
+  text-align: center;
+}
+
+.headerform {
+  color: bisque;
+  font-size: 27px;
+  padding: 10px;
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #36a0ff;
+}
+
+.nombrebanda {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+
+.fotitos {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  transition: 0.3s;
+}
+
+.fotitos img {
+  width: 0%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  transition: 0.6s;
+}
+
+.fotitos img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast 120%;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.carousel-inner {
+  width: 50%;
+  left: 25%;
+}
+
+.carousel-item {
+  min-height: 600px;
+  max-height: 900px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fotosfecha {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  transition: 0.3s;
+}
+.fotosfecha img {
+  width: 0%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  transition: 0.6s;
+}
+.fotosfecha img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast 120%;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.elemento {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: black;
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 425px) {
+  .barra {
+    display: flex;
+    flex-direction: column;
+  }
+  .barra a {
+    margin-top: 1rem;
+  }
+  .carrusel img {
+    height: 300px;
+    width: 320px;
+  }
+}
+.copy {
+  display: none;
+}
+
+.videos {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.barravideos {
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 1rem;
+}
+
+.fotorespo img {
+  display: flex;
+  height: 10rem;
+  width: 18rem;
+  align-items: center;
+  padding: 50px;
+  flex-flow: column;
+}
+
+.fotorespo img {
+  width: 500;
+  height: 316;
+}
+
+.copy {
+  color: black;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  .carousel-inner {
+    width: 100%;
+    left: 0;
+  }
+  .fotitos {
+    flex-direction: column;
+    height: 100%;
+  }
+  .fotitos img {
+    width: 100%;
+    height: 400px;
+    object-position: top;
+    flex-grow: 1;
+  }
+  #alinear {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  #alinear li {
+    width: 90%;
+  }
+  .fotosfecha {
+    flex-direction: column;
+    height: 100%;
+  }
+  .fotosfecha img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
